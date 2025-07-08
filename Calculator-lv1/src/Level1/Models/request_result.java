@@ -1,10 +1,20 @@
 package Level1.Models;
 
 public class request_result {
-    public int[] inputDatas = new int[2];
+    public double[] inputDatas;
     public char calSign;
+    private double outputDatas;
 
-    public request_result(int brLen) {
-        this.inputDatas = inputDatas;
+
+    public double getOutputDatas() {
+        return outputDatas;
     }
+
+    public request_result(int brLen)
+    {
+        inputDatas = new double[brLen];
+    }
+
+
+
 }

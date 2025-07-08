@@ -33,6 +33,11 @@ public class request5_SaveallandRemove {
             System.out.print("사칙연산 기호를 입력하세요: ex) + - % * / ");
             tempResult.calSign = sc.next().charAt(0);
 
+            // 구현 재구성 부
+
+
+
+
             var calResult = resultInput(tempResult);
             //입력 기호에 해당하는 연산 후 결과 반환
             if (calResult.resultBool) {
@@ -79,6 +84,9 @@ public class request5_SaveallandRemove {
     }
 
     public static request_lib resultInput(request_result brResult) {
+
+
+
         return switch (brResult.calSign) {
             case '+' -> new request_lib() {{
                 resultInt = brResult.inputDatas[0] + brResult.inputDatas[1];
